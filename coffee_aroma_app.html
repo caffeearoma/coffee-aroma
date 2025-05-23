@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Aroma</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .menu-icon {
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .product {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .product h2 {
+      font-size: 28px;
+      margin: 20px 0 10px;
+    }
+
+    .product p {
+      font-size: 18px;
+    }
+
+    .product .price {
+      text-decoration: line-through;
+      color: #888;
+    }
+
+    form {
+      background-color: #f5f5f5;
+      padding: 20px;
+      max-width: 400px;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">coffee aroma.</div>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+
+  <div class="banner">
+    <img src="coffee_aroma_app_mockup.png" alt="Coffee Aroma Café">
+  </div>
+
+  <div class="product">
+    <h2>Cappuccino</h2>
+    <p>Precio <span class="price">$4.95</span> <strong>(Gratis)</strong></p>
+  </div>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <select name="product">
+      <option value="Cappuccino">Cappuccino</option>
+      <option value="Latte">Latte</option>
+      <option value="Espresso">Espresso</option>
+    </select>
+    <input type="number" name="quantity" placeholder="Cantidad" min="1" required>
+    <input type="text" name="pickup_time" placeholder="Hora para recoger (ej. 2:30 PM)" required>
+    <button type="submit">Enviar Pedido</button>
+  </form>
+
+  <footer>
+    © 2025 Coffee Aroma. All rights reserved.
+  </footer>
+
+</body>
+</html>
